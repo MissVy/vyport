@@ -1,0 +1,79 @@
+$(window).load(function() {
+	// Animate loader off screen
+	$(".se-pre-con").fadeOut("slow");;
+});
+
+$(document).ready(function() {
+
+
+
+	$(window).scroll(function() {
+		var scrollTop = $(window).scrollTop();
+		if (scrollTop != 0) {
+			$('#theNavBar').addClass("hideTheNavBar");
+		} else {
+			$('#theNavBar').removeClass("hideTheNavBar");
+			$('#theNavBar').addClass("showTheNavBar");
+		}
+		console.log(scrollTop);
+	});
+
+	$(".holdThumbs").stick_in_parent();
+
+	$(".shopWrapper").stick_in_parent();
+
+	$(".toBlog").on("click", function() {
+		$("#theBlog").animatescroll();
+	});
+
+	$('a.back-to-top').click(function() {
+		$('body, html').animate({
+			scrollTop: 0
+		}, 700);
+		return false;
+	});
+
+	//upbutton
+	var amountScrolled = 300;
+	$(window).scroll(function() {
+		if ($(window).scrollTop() > amountScrolled) {
+			$('a.back-to-top').fadeIn('slow');
+		} else {
+			$('a.back-to-top').fadeOut('slow');
+		}
+	});
+
+	$(function() {
+		$('[data-toggle="popover"]').popover()
+	});
+
+	var image1 = '<button> $000.00 AUD </button>';
+	$('#tag1').popover({
+		title: 'title',
+		content: image1,
+		html: true
+	});
+
+	//shop items icons
+
+	$(".mainArticle").mouseover(function() {
+		var showQuickLike = $(this).find($(".quickLike"));
+		showQuickLike.css("opacity", "1");
+	});
+	$(".mainArticle").mouseout(function() {
+		var showQuickLike = $(this).find($(".quickLike"));
+		showQuickLike.css("opacity", "0");
+	});
+
+	$(".quick").mouseover(function() {
+		$(this).find($(".unfilled")).css("display", "none");
+		$(this).find($(".filled")).css("display", "initial");
+	});
+
+	$(".quick").mouseout(function() {
+		var showdeye = $(this).find($(".theeye"));
+		$(this).find($(".unfilled")).css("display", "initial");
+		$(this).find($(".filled")).css("display", "none");
+	});
+
+});
