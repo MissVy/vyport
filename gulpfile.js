@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 var RevAll = require('gulp-rev-all');
+var clean = require('gulp-clean');
 
 gulp.task('default', function() {
 
@@ -13,6 +14,7 @@ gulp.task('default', function() {
 	});
 	gulp.src('2015portfolio/**')
 		.pipe(revAll.revision())
+		.pipe(clean())
 		.pipe(gulp.dest('dist'));
 
 });
