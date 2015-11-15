@@ -8,7 +8,9 @@
   },
   "devDependencies": {
     "gulp-rev-all": "^0.8.22",
-    "gulp-rm": "^1.0.0"
+    "gulp-rm": "^1.0.0",
+    "gulp-run": "^1.6.11",
+    "gulp-shell": "^0.5.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
