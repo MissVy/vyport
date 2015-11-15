@@ -3,9 +3,16 @@ var RevAll = require('gulp-rev-all');
 
 gulp.task('default', function() {
 
-	var revAll = new RevAll();
-	gulp.src('dist/**')
+	var revAll = new RevAll({
+		dontRenameFile: [
+			/^\/favicon.ico$/g,
+			/^\/.*.html/g,
+			/^\/.*.yml/g,
+			/^\/.*.bat/g
+		]
+	});
+	gulp.src('2015portfolio/**')
 		.pipe(revAll.revision())
-		.pipe(gulp.dest('cdn'));
+		.pipe(gulp.dest('dist'));
 
 });

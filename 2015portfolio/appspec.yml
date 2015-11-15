@@ -1,7 +1,7 @@
 version: 0.0
 os: windows
 files:
-  - source: \2015portfolio
+  - source: .\
     destination: C:\inetpub\wwwroot
 hooks:
   BeforeInstall:
