@@ -452,7 +452,7 @@ html.export {
 
 body {
   color: #333;
-  /*background: #D8D5D2;*/
+  background: #D8D5D2;
 }
 
 /* ---- links ---- */
@@ -1057,25 +1057,6 @@ you can use the generic selector below, but it's slower:
 .button-group .button:first-child { border-radius: 0.5em 0 0 0.5em; }
 .button-group .button:last-child { border-radius: 0 0.5em 0.5em 0; }
 
-/* 
-
-------------------------- */
-
-.container {
-  margin-left: 10px;
-  margin-right: 10px;
-  max-width: 1200px;
-}
-
-@media screen and ( min-width: 1100px ) {
-  
-  .container {
-    margin-left: 6%;
-    margin-right: 200px;
-  }
-
-}
-
 /* call out
 ------------------------- */
 
@@ -1132,6 +1113,24 @@ you can use the generic selector below, but it's slower:
     top: 30px;
     font-size: 1.9em;
     line-height: 46px;
+  }
+
+}
+
+/* container
+------------------------- */
+
+.container {
+  margin-left: 10px;
+  margin-right: 10px;
+  max-width: 1200px;
+}
+
+@media screen and ( min-width: 1100px ) {
+  
+  .container {
+    margin-left: 6%;
+    margin-right: 200px;
   }
 
 }
@@ -1759,36 +1758,4 @@ two columns for large devices
   content: '·';
   padding-right: 0.4em;
   display: inline-block;
-}
-
-/*our own*/
-
-#masonryContainer{
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-  width: 100%;
-  margin: 0 auto;
- 
-
-}
-        
-.item {
-  width: 380px;
-  height: auto;
-  background-color: transparent;
-  margin-bottom: 10px;
-  overflow: hidden;
-}
-.item img {
-  width: 100%;
-  -webkit-filter: brightness(90%) opacity(0.95);
-  
-  -webkit-transition: transform 0.5s, -webkit-filter 1s ;
- 
-}
-
-.item img:hover {
-  -webkit-filter: brightness(105%) opacity(1);
-  
 }

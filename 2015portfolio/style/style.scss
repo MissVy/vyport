@@ -176,7 +176,7 @@ h1{
 	    	width: 100%;
 	    }
 	}
-	.flowersandleaves, .insertforproject{
+	.flowersandleaves, .bottomLeaves{
 		display: inline-block;
 		overflow: hidden;
 		height: 100vh;
@@ -188,15 +188,45 @@ h1{
 		}
 
 		.largeItems {
-			min-width: 400px;
 			animation-name: moveup;
 			animation-duration: 2s;
 			animation-timing-function: ease;
+			position: absolute;
+			z-index: 96;
+			
+		}
+		
+		.mediumItems {
+			animation-name: moveup;
+			animation-duration: 3s;
+			animation-timing-function: ease-in-out;
+			position: absolute;
+			z-index: 97;
+		}
+
+		.smallItems {
+			max-width: 2%;	
+			position: absolute;
+			z-index: 99;
+			animation-name: moveupLast;
+			animation-duration: 5s;
+			animation-timing-function: ease;
+		}
+		
+		.bottomItems{
+			animation-name: moveup;
+			animation-duration: 4s;
+			animation-timing-function: ease;
+			position: absolute;
+			z-index: 98;
+		}
+		.floatItems {
+			position: absolute;
+			z-index: 201;
 		}
 
 		@keyframes moveup {
 			from {
-
 				-webkit-transform: translateY(250px);
 				transform: translateY(250px);
 			}
@@ -204,22 +234,6 @@ h1{
 				-webkit-transform: translateY(0px);
 				transform: translateY(0px);
 			}
-		}
-		
-		.mediumItems {
-			min-width: 350px;	
-			animation-name: moveup;
-			animation-duration: 2s;
-			animation-timing-function: ease-in-out;
-		}
-
-		.smallItems {
-			max-width: 300px;	
-			position: absolute;
-			z-index: 200;
-			animation-name: moveupLast;
-			animation-duration: 3s;
-			animation-timing-function: ease;
 		}
 
 		@keyframes moveupLast {
@@ -231,12 +245,6 @@ h1{
 				-webkit-transform: translateY(0px);
 				transform: translateY(0px);
 			}
-		}
-		.bottomItems{
-			// max-width: 400px;	
-			animation-name: moveup;
-			animation-duration: 3s;
-			animation-timing-function: ease;
 		}
 	}
 
@@ -386,9 +394,8 @@ h1{
 }
 
 .graphicHeader {
-	background-image: none; 
-	// -webkit-filter: blur(3px) grayscale(50%); 
-	// opacity:0.15;
+	background-image: none;
+	
 }
 
 

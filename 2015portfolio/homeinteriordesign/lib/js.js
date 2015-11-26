@@ -5,8 +5,6 @@ $(window).load(function() {
 
 $(document).ready(function() {
 
-
-
 	$(window).scroll(function() {
 		var scrollTop = $(window).scrollTop();
 		if (scrollTop != 0) {
@@ -15,10 +13,11 @@ $(document).ready(function() {
 			$('#theNavBar').removeClass("hideTheNavBar");
 			$('#theNavBar').addClass("showTheNavBar");
 		}
-		console.log(scrollTop);
 	});
 
 	$(".holdThumbs").stick_in_parent();
+
+	$(".inspirLinks").stick_in_parent();
 
 	$(".shopWrapper").stick_in_parent();
 
@@ -47,9 +46,8 @@ $(document).ready(function() {
 		$('[data-toggle="popover"]').popover()
 	});
 
-	var image1 = '<button> $000.00 AUD </button>';
-	$('#tag1').popover({
-		title: 'title',
+	var image1 = '<p> Some description about the product.</p>  <hr> <button> $000.00 AUD </button>';
+	$('.tagIcon').popover({
 		content: image1,
 		html: true
 	});
@@ -75,5 +73,7 @@ $(document).ready(function() {
 		$(this).find($(".unfilled")).css("display", "initial");
 		$(this).find($(".filled")).css("display", "none");
 	});
+
+
 
 });

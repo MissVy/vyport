@@ -133,19 +133,42 @@ h1 {
     text-align: center; }
     .header .page-intro img {
       width: 100%; }
-  .header .flowersandleaves, .header .insertforproject {
+  .header .flowersandleaves, .header .bottomLeaves {
     display: inline-block;
     overflow: hidden;
     height: 100vh;
     overflow: hidden; }
-    .header .flowersandleaves .randomElement, .header .insertforproject .randomElement {
+    .header .flowersandleaves .randomElement, .header .bottomLeaves .randomElement {
       display: inline-block;
       position: absolute; }
-    .header .flowersandleaves .largeItems, .header .insertforproject .largeItems {
-      min-width: 400px;
+    .header .flowersandleaves .largeItems, .header .bottomLeaves .largeItems {
       animation-name: moveup;
       animation-duration: 2s;
+      animation-timing-function: ease;
+      position: absolute;
+      z-index: 96; }
+    .header .flowersandleaves .mediumItems, .header .bottomLeaves .mediumItems {
+      animation-name: moveup;
+      animation-duration: 3s;
+      animation-timing-function: ease-in-out;
+      position: absolute;
+      z-index: 97; }
+    .header .flowersandleaves .smallItems, .header .bottomLeaves .smallItems {
+      max-width: 2%;
+      position: absolute;
+      z-index: 99;
+      animation-name: moveupLast;
+      animation-duration: 5s;
       animation-timing-function: ease; }
+    .header .flowersandleaves .bottomItems, .header .bottomLeaves .bottomItems {
+      animation-name: moveup;
+      animation-duration: 4s;
+      animation-timing-function: ease;
+      position: absolute;
+      z-index: 98; }
+    .header .flowersandleaves .floatItems, .header .bottomLeaves .floatItems {
+      position: absolute;
+      z-index: 201; }
 @keyframes moveup {
   from {
     -webkit-transform: translateY(250px);
@@ -153,18 +176,6 @@ h1 {
   to {
     -webkit-transform: translateY(0px);
     transform: translateY(0px); } }
-    .header .flowersandleaves .mediumItems, .header .insertforproject .mediumItems {
-      min-width: 350px;
-      animation-name: moveup;
-      animation-duration: 2s;
-      animation-timing-function: ease-in-out; }
-    .header .flowersandleaves .smallItems, .header .insertforproject .smallItems {
-      max-width: 300px;
-      position: absolute;
-      z-index: 200;
-      animation-name: moveupLast;
-      animation-duration: 3s;
-      animation-timing-function: ease; }
 @keyframes moveupLast {
   from {
     -webkit-transform: translateY(600px);
@@ -172,10 +183,6 @@ h1 {
   to {
     -webkit-transform: translateY(0px);
     transform: translateY(0px); } }
-    .header .flowersandleaves .bottomItems, .header .insertforproject .bottomItems {
-      animation-name: moveup;
-      animation-duration: 3s;
-      animation-timing-function: ease; }
   .header nav {
     text-align: center;
     font-size: 40px;
