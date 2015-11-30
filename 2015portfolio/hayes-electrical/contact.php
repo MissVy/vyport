@@ -150,8 +150,8 @@
 
 
   
-  <h6 class="footer1"> © Copyright 2014 Hayes Electrical <br>
-   Website designed and created by <a href="http://www.vyhn.info">Vy Nguyen </a> </h6>
+  <h6 class="footer1"> &#169; Copyright 2014 Hayes Electrical. 
+   Website designed and created by <a href="http://www.vy-nguyen.com.au">Vy Nguyen </a> </h6>
  
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

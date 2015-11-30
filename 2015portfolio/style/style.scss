@@ -1,13 +1,5 @@
 
 @font-face {
-	font-family: "Impact";
-	src: url(../fonts/Impact/Impact_Label.ttf);
-}
-@font-face {
-	font-family: "Impact-Reversed";
-	src: url(../fonts/Impact/Impact_Label_Reversed.ttf);
-}
-@font-face {
 	font-family: "dosis-bold";
 	src: url(../fonts/dosis/Dosis-Bold.otf);
 }
@@ -55,12 +47,21 @@ h1{
 }
 
 #mainLogo {
+	font-size: 9em;
 	font-size: 10vmax;
-	font-family: dosis-bold;
+	font-family: dosis;
+	font-weight: bolder;
 	color: white;
 
 }
 
+.navbar-default .navbar-nav > li > a {
+	font-size: 	14px;
+	color: gray;
+	.selected {
+		color: black;
+	}
+}
 .navbarline{
 	border: 0px;
 	background-color: whitesmoke;
@@ -69,16 +70,15 @@ h1{
 	position: absolute;
 	z-index: 155;
 	font-size: 18px;
-	font-family: Impact-Reversed;
 	.navbar-default .navbar-brand{
 		color: white;
 	}
 	.navbar-brand {
-		font-family: dosis-bold;
+		font-family: dosis;
+		font-weight: bolder;
 	}
-	.selected {
-		font-family: Impact;
-	}
+	
+	
 }
 
 .leavesOverlay{
@@ -259,16 +259,18 @@ h1{
 		list-style-type: none;
 		li {
 			text-decoration: none;
-			font-family: Impact;
+			font-family: dosis;
 			// text-shadow: 1px 1px 0px black;
 		}
 		
-		a{ color: white;
+		a { 
+			color: white;
 			margin: 10px 15px 10px 0px;
+			font-weight: bolder;
 			&:hover {
 				text-decoration: none;
 				color: #FDAA00;
-				font-family: Impact;
+				
 			}
 
 		}
@@ -423,6 +425,7 @@ h1{
 .navBottom {
 	width:80%;
 	-webkit-animation: slideUp 1s ease-in-out;
+	-moz-animation: slideUp 1s ease-in-out;
 	opacity: 1;
 	position: fixed;
     background: rgba(253, 170, 0, 0.95);
@@ -481,6 +484,7 @@ h1{
 
 .showNavBottom {
 	-webkit-transform: translate(0, 0);
+	-moz-transform: translate(0, 0);
 }
 
 

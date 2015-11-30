@@ -1,10 +1,4 @@
 @font-face {
-  font-family: "Impact";
-  src: url(../fonts/Impact/Impact_Label.ttf); }
-@font-face {
-  font-family: "Impact-Reversed";
-  src: url(../fonts/Impact/Impact_Label_Reversed.ttf); }
-@font-face {
   font-family: "dosis-bold";
   src: url(../fonts/dosis/Dosis-Bold.otf); }
 @-ms-viewport {
@@ -45,9 +39,17 @@ h1 {
   background: url(../img/Preloader_2.gif) center no-repeat #fff; }
 
 #mainLogo {
+  font-size: 9em;
   font-size: 10vmax;
-  font-family: dosis-bold;
+  font-family: dosis;
+  font-weight: bolder;
   color: white; }
+
+.navbar-default .navbar-nav > li > a {
+  font-size: 14px;
+  color: gray; }
+  .navbar-default .navbar-nav > li > a .selected {
+    color: black; }
 
 .navbarline {
   border: 0px;
@@ -56,14 +58,12 @@ h1 {
   width: 100%;
   position: absolute;
   z-index: 155;
-  font-size: 18px;
-  font-family: Impact-Reversed; }
+  font-size: 18px; }
   .navbarline .navbar-default .navbar-brand {
     color: white; }
   .navbarline .navbar-brand {
-    font-family: dosis-bold; }
-  .navbarline .selected {
-    font-family: Impact; }
+    font-family: dosis;
+    font-weight: bolder; }
 
 .leavesOverlay {
   width: 100%;
@@ -194,14 +194,14 @@ h1 {
     list-style-type: none; }
     .header nav li {
       text-decoration: none;
-      font-family: Impact; }
+      font-family: dosis; }
     .header nav a {
       color: white;
-      margin: 10px 15px 10px 0px; }
+      margin: 10px 15px 10px 0px;
+      font-weight: bolder; }
       .header nav a:hover {
         text-decoration: none;
-        color: #FDAA00;
-        font-family: Impact; }
+        color: #FDAA00; }
     .header nav li:nth-child(3) a {
       margin-right: 0px; }
 
@@ -312,6 +312,7 @@ h1 {
 .navBottom {
   width: 80%;
   -webkit-animation: slideUp 1s ease-in-out;
+  -moz-animation: slideUp 1s ease-in-out;
   opacity: 1;
   position: fixed;
   background: rgba(253, 170, 0, 0.95);
@@ -354,7 +355,8 @@ h1 {
     width: 100%; }
 
 .showNavBottom {
-  -webkit-transform: translate(0, 0); }
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0); }
 
 @media screen and (max-width: 1000px) {
   .projectThumb .col-md-6 {
