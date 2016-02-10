@@ -129,11 +129,11 @@ body {
 
 .mainIcons {
   text-align: center;
-  margin-top: 2%;
-  margin-bottom: 2%; }
+  margin-top: 3%;
+  margin-bottom: 5%; }
   .mainIcons .col-xs-4 .iconsImage {
     width: 100%;
-    height: 110px; }
+    height: 60%; }
     .mainIcons .col-xs-4 .iconsImage img {
       width: 90%;
       max-width: 90px;
@@ -266,7 +266,7 @@ body {
     float: right;
     right: 0;
     width: 30%;
-    margin-top: 5%; }
+    margin: 10% 0; }
     .linksAndImages .inspirLinks .lightBulb {
       width: 100%;
       height: 135px;
@@ -275,7 +275,45 @@ body {
       list-style: none;
       text-transform: uppercase;
       font-size: 2em; }
-
+  .linksAndImages .scrollMore {
+    text-align: center;
+    color: gray; }
+    .linksAndImages .scrollMore img {
+      width: 35px;
+      position: relative;
+      -webkit-transform: rotate(180deg);
+      -webkit-animation: bob 2s infinite;
+      -moz-transform: rotate(180deg);
+      -moz-animation: bob 2s infinite;
+      -ms-transform: rotate(180deg);
+      -ms-animation: bob 2s infinite; }
+    .linksAndImages .scrollMore h6 {
+      position: relative;
+      -webkit-animation: bob 2s infinite;
+      -moz-animation: bob 2s infinite;
+      -ms-animation: bob 2s infinite;
+      margin: 0; }
+@-webkit-keyframes bob {
+  0% {
+    top: 0px; }
+  50% {
+    top: 10px; }
+  100% {
+    top: 0px; } }
+@-moz-keyframes bob {
+  0% {
+    top: 0px; }
+  50% {
+    top: 10px; }
+  100% {
+    top: 0px; } }
+@-ms-keyframes bob {
+  0% {
+    top: 0px; }
+  50% {
+    top: 10px; }
+  100% {
+    top: 0px; } }
 .holdMainAndItems {
   position: relative; }
   .holdMainAndItems .tags {
@@ -286,9 +324,9 @@ body {
       opacity: 0.9;
       position: inherit;
       visibility: hidden;
-      -webkit-animation: tagSwing 4s 2s;
-      -moz-animation: tagSwing 4s 2s;
-      -ms-animation: tagSwing 4s 2s;
+      -webkit-animation: tagSwing 4s 1s;
+      -moz-animation: tagSwing 4s 1s;
+      -ms-animation: tagSwing 4s 1s;
       animation-fill-mode: forwards; }
       .holdMainAndItems .tags .tagIcon img {
         width: 30px; }
@@ -394,7 +432,7 @@ body {
     overflow: hidden;
     bottom: 0px;
     top: 0px;
-    background-color: #F9F9F9; }
+    background-color: #EAEAEA; }
     .holdMainAndItems .shopWrapper img {
       height: 100%; }
   .holdMainAndItems .quickLike {
@@ -533,11 +571,11 @@ footer {
         background: url("../img/ideas-iconw.png") no-repeat center;
         background-size: 60%; }
       .linksAndImages .inspirLinks .navLinks {
-        display: none; }
+        visibility: hidden; }
       .linksAndImages .inspirLinks:hover {
         background-color: gray; }
         .linksAndImages .inspirLinks:hover .navLinks {
-          display: initial; }
+          visibility: visible; }
         .linksAndImages .inspirLinks:hover li {
           color: white;
           font-size: 12px; }

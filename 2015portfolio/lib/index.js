@@ -5,7 +5,7 @@ $(window).load(function() {
 
 $(document).ready(function() {
 	var totalNumberOfItems = 30;
-	var cocoLeaves = "../img/coco.png ";
+	var cocoLeaves = "../img/coco5.png ";
 	var banaLeaves = "../img/flat.png";
 	var blueFlower1 = "../img/blueflower1.png";
 	var blueFlower2 = "../img/blueflower2.png";

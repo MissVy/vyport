@@ -135,12 +135,12 @@ body {
 
 .mainIcons {
 	text-align: center;
-	margin-top: 2%;
-	margin-bottom: 2%;
+	margin-top: 3%;
+	margin-bottom: 5%;
 	.col-xs-4 {
 		.iconsImage {
 			width: 100%;
-			height: 110px;
+			height: 60%;
 			img {
 				width: 90%;
 				max-width: 90px;
@@ -333,28 +333,62 @@ body {
         float: right;
         right: 0;
         width: 30%;
-        margin-top: 5%;
+        margin: 10% 0;
       	.lightBulb {
       		width: 100%;
       		height: 135px;
       		background: url("../img/ideas-icon.png") no-repeat center;
       	}
+
       	li {
       		list-style: none;
 			text-transform: uppercase;
-
 			font-size: 2em;
       	}
-        
-       
     }
+
+    .scrollMore {
+  		text-align: center;
+  		color: gray;
+  		img {
+  			width: 35px;
+  			 position: relative;
+  			-webkit-transform: rotate(180deg) ;
+  			-webkit-animation: bob 2s infinite;
+  			-moz-transform: rotate(180deg) ;
+  			-moz-animation: bob 2s infinite;
+  			-ms-transform: rotate(180deg) ;
+  			-ms-animation: bob 2s infinite;
+  		}
+  		h6 {
+  			 position: relative;
+  			-webkit-animation: bob 2s infinite;
+  			-moz-animation: bob 2s infinite;
+  			-ms-animation: bob 2s infinite;
+  			margin: 0;
+  		}
+  		@-webkit-keyframes bob {
+  			0%{top: 0px;}
+		    50% {top: 10px;}
+		    100% {top: 0px;}  	
+  		}
+  		@-moz-keyframes bob {
+  			0%{top: 0px;}
+		    50% {top: 10px;}
+		    100% {top: 0px;}  	
+  		}
+  		@-ms-keyframes bob {
+  			0%{top: 0px;}
+		    50% {top: 10px;}
+		    100% {top: 0px;}  	
+  		}
+  	}
 }
 
 
 //shop page 
 .holdMainAndItems {
 	position: relative;
-	border: none;
 	.tags {
 		position: absolute;
 		height: 100vh;
@@ -363,9 +397,9 @@ body {
 			opacity: 0.9;
 			position: inherit;
 			visibility: hidden;
-			-webkit-animation: tagSwing 4s 2s;
-			-moz-animation: tagSwing 4s 2s;
-			-ms-animation: tagSwing 4s 2s;
+			-webkit-animation: tagSwing 4s 1s;
+			-moz-animation: tagSwing 4s 1s;
+			-ms-animation: tagSwing 4s 1s;
 			animation-fill-mode: forwards; 
 			img {
 				width: 30px;
@@ -467,7 +501,7 @@ body {
 	    overflow: hidden;
 	    bottom: 0px;
 	    top: 0px;
-	    background-color: #F9F9F9;
+	    background-color: #EAEAEA;
 	    img {
 	    	height: 100%;
 	    }
@@ -651,6 +685,7 @@ footer {
 			border-radius: 5px 0 0 5px;
 			padding:  1.5% 1%;
 			min-width: 90px;
+
 			.lightBulb {
 	      		width: 100%;
 	      		height: 90px;
@@ -658,12 +693,13 @@ footer {
 	      		background-size: 60%;
 	      	}
 			.navLinks {
-				display: none;
+				visibility: hidden;
 			}
+			
 			&:hover {
 				background-color: gray;
 				.navLinks {
-					display: initial;
+					visibility: visible;
 				}
 				li {
 					color: white;
@@ -675,7 +711,6 @@ footer {
 
 			}
 		}
-		
 	}
 	
 

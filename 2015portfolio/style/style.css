@@ -39,7 +39,7 @@ h1 {
   background: url(../img/Preloader_2.gif) center no-repeat #fff; }
 
 #mainLogo {
-  font-size: 9em;
+  font-size: 13em;
   font-size: 10vmax;
   font-family: dosis;
   font-weight: bolder;
@@ -122,17 +122,14 @@ h1 {
   background-color: #BEDBE2;
   width: 100%; }
   .header .page-intro {
-    width: 50%;
     max-height: 180px;
     display: inline-block;
     z-index: 100;
     position: absolute;
     top: 20%;
-    left: 25%;
-    right: 25%;
+    left: 5%;
+    right: 5%;
     text-align: center; }
-    .header .page-intro img {
-      width: 100%; }
   .header .flowersandleaves, .header .bottomLeaves {
     display: inline-block;
     overflow: hidden;
@@ -185,9 +182,9 @@ h1 {
     transform: translateY(0px); } }
   .header nav {
     text-align: center;
-    font-size: 40px;
+    font-size: 2em;
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 20%;
     right: 20%;
     z-index: 100;
@@ -313,6 +310,7 @@ h1 {
   width: 80%;
   -webkit-animation: slideUp 1s ease-in-out;
   -moz-animation: slideUp 1s ease-in-out;
+  -ms-animation: slideUp 1s ease-in-out;
   opacity: 1;
   position: fixed;
   background: rgba(253, 170, 0, 0.95);
@@ -342,11 +340,13 @@ h1 {
       overflow: hidden;
       -webkit-transition: width 1s ease-in-out;
       -moz-transition: width 1s ease-in-out;
+      -ms-transition: width 1s ease-in-out;
       -o-transition: width 1s ease-in-out;
       transition: width 1s ease-in-out; }
     .navBottom .contents .innerTwo {
       -webkit-transition-delay: 0.5s;
       -moz-transition-delay: 0.5s;
+      -ms-transition: width 1s ease-in-out;
       -o-transition-delay: 0.5s;
       transition-delay: 0.5s; }
   .navBottom .hover:hover + .wrapper .inner {
@@ -356,7 +356,8 @@ h1 {
 
 .showNavBottom {
   -webkit-transform: translate(0, 0);
-  -moz-transform: translate(0, 0); }
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0); }
 
 @media screen and (max-width: 1000px) {
   .projectThumb .col-md-6 {
@@ -372,10 +373,10 @@ h1 {
     font-size: 25px; }
   .wholeBody .contents {
     font-size: 25px; } }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 980px) {
   #mainLogo {
-    font-size: 50px; }
-
+    font-size: 65px; } }
+@media screen and (max-width: 480px) {
   .header nav {
     font-size: 25px; }
 

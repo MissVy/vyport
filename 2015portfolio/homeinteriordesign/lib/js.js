@@ -34,13 +34,20 @@ $(document).ready(function() {
 
 	//upbutton
 	var amountScrolled = 300;
+
 	$(window).scroll(function() {
+
 		if ($(window).scrollTop() > amountScrolled) {
 			$('a.back-to-top').fadeIn('slow');
+			$('.scrollMore').fadeOut('slow');
+
 		} else {
 			$('a.back-to-top').fadeOut('slow');
+			$('.scrollMore').fadeIn('slow');
 		}
 	});
+
+
 
 	$(function() {
 		$('[data-toggle="popover"]').popover()
@@ -72,6 +79,26 @@ $(document).ready(function() {
 		var showdeye = $(this).find($(".theeye"));
 		$(this).find($(".unfilled")).css("display", "initial");
 		$(this).find($(".filled")).css("display", "none");
+	});
+
+	//before and after slideshow
+
+	$(function() {
+		$(".shopWrapper").mousemove(function() {
+			$(".theAfter").stop().animate({
+				left: "-100%"
+			}, {
+				queue: false,
+				duration: 300
+			});
+		}, function() {
+			$(".theAfter").stop().animate({
+				left: "-50px"
+			}, {
+				queue: false,
+				duration: 300
+			});
+		});
 	});
 
 
