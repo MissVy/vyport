@@ -25,7 +25,7 @@ gulp.task('rev', function() {
 		async: false
 	}));
 
-	return gulp.src('2015portfolio/**')
+	return gulp.src('2016portfolio/**')
 		.pipe(revAll.revision())
 		.pipe(gulp.dest('dist'))
 });

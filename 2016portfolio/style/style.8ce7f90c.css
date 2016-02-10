@@ -1,0 +1,386 @@
+@font-face {
+  font-family: "dosis-bold";
+  src: url(../fonts/dosis/Dosis-Bold.9df740dc.otf); }
+@-ms-viewport {
+  width: extend-to-zoom;
+  zoom: 1.0; }
+a:hover {
+  text-decoration: none; }
+
+p {
+  font-family: monospace, sans-serif; }
+
+body {
+  margin: 0px; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0px;
+  color: white; }
+
+h1 {
+  font-size: 2em; }
+
+.no-js #loader {
+  display: none; }
+
+.js #loader {
+  display: block;
+  position: absolute;
+  left: 100px;
+  top: 0; }
+
+.se-pre-con {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url(../img/Preloader_2.0de3eaf5.gif) center no-repeat #fff; }
+
+#mainLogo {
+  font-size: 13em;
+  font-size: 10vmax;
+  font-family: dosis;
+  font-weight: bolder;
+  color: white; }
+
+.navbar-default .navbar-nav > li > a {
+  font-size: 14px;
+  color: gray; }
+  .navbar-default .navbar-nav > li > a .selected {
+    color: black; }
+
+.navbarline {
+  border: 0px;
+  background-color: whitesmoke;
+  border-radius: 0px;
+  width: 100%;
+  position: absolute;
+  z-index: 155;
+  font-size: 18px; }
+  .navbarline .navbar-default .navbar-brand {
+    color: white; }
+  .navbarline .navbar-brand {
+    font-family: dosis;
+    font-weight: bolder; }
+
+.leavesOverlay {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 200;
+  bottom: 0; }
+
+.projectThumb {
+  text-align: center;
+  padding: 20px;
+  position: absolute;
+  z-index: 150;
+  left: 0;
+  right: 0;
+  top: 15%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white; }
+  .projectThumb .row:last-of-type {
+    margin-bottom: 10%; }
+  .projectThumb h3 {
+    margin: 30px 0px 5px 0px;
+    color: gray;
+    letter-spacing: 1px;
+    font-size: 18px;
+    text-align: left;
+    transition: color 1.5s;
+    text-align: center; }
+  .projectThumb h2 {
+    font-size: 14px;
+    color: #CCCCCC;
+    text-align: left;
+    margin-bottom: 10%;
+    font-family: monospace;
+    text-align: center; }
+  .projectThumb .col-md-6 {
+    margin: 4% 1%;
+    width: 45%;
+    box-sizing: border-box; }
+    .projectThumb .col-md-6 .underlay {
+      padding: 10%;
+      background-color: #F9F9F9; }
+      .projectThumb .col-md-6 .underlay img {
+        width: 100%;
+        -webkit-filter: brightness(100%) grayscale(10%);
+        transition: -webkit-filter 1.5s; }
+      .projectThumb .col-md-6 .underlay:hover img {
+        -webkit-filter: brightness(110%); }
+    .projectThumb .col-md-6:hover h3 {
+      color: black; }
+
+.header {
+  height: 100vh;
+  min-height: 300px;
+  background-color: #BEDBE2;
+  width: 100%; }
+  .header .page-intro {
+    max-height: 180px;
+    display: inline-block;
+    z-index: 100;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    right: 5%;
+    text-align: center; }
+  .header .flowersandleaves, .header .bottomLeaves {
+    display: inline-block;
+    overflow: hidden;
+    height: 100vh;
+    overflow: hidden; }
+    .header .flowersandleaves .randomElement, .header .bottomLeaves .randomElement {
+      display: inline-block;
+      position: absolute; }
+    .header .flowersandleaves .largeItems, .header .bottomLeaves .largeItems {
+      animation-name: moveup;
+      animation-duration: 2s;
+      animation-timing-function: ease;
+      position: absolute;
+      z-index: 96; }
+    .header .flowersandleaves .mediumItems, .header .bottomLeaves .mediumItems {
+      animation-name: moveup;
+      animation-duration: 3s;
+      animation-timing-function: ease-in-out;
+      position: absolute;
+      z-index: 97; }
+    .header .flowersandleaves .smallItems, .header .bottomLeaves .smallItems {
+      max-width: 2%;
+      position: absolute;
+      z-index: 99;
+      animation-name: moveupLast;
+      animation-duration: 5s;
+      animation-timing-function: ease; }
+    .header .flowersandleaves .bottomItems, .header .bottomLeaves .bottomItems {
+      animation-name: moveup;
+      animation-duration: 4s;
+      animation-timing-function: ease;
+      position: absolute;
+      z-index: 98; }
+    .header .flowersandleaves .floatItems, .header .bottomLeaves .floatItems {
+      position: absolute;
+      z-index: 201; }
+@keyframes moveup {
+  from {
+    -webkit-transform: translateY(250px);
+    transform: translateY(250px); }
+  to {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px); } }
+@keyframes moveupLast {
+  from {
+    -webkit-transform: translateY(600px);
+    transform: translateY(600px); }
+  to {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px); } }
+  .header nav {
+    text-align: center;
+    font-size: 2em;
+    position: absolute;
+    top: 60%;
+    left: 20%;
+    right: 20%;
+    z-index: 100;
+    list-style-type: none; }
+    .header nav li {
+      text-decoration: none;
+      font-family: dosis; }
+    .header nav a {
+      color: white;
+      margin: 10px 15px 10px 0px;
+      font-weight: bolder; }
+      .header nav a:hover {
+        text-decoration: none;
+        color: #FDAA00; }
+    .header nav li:nth-child(3) a {
+      margin-right: 0px; }
+
+.pulsingLink {
+  color: black;
+  -webkit-animation-name: pulsing;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 7s; }
+
+@-webkit-keyframes pulsing {
+  0% {
+    color: black; }
+  50% {
+    color: yellow; }
+  100% {
+    color: black; } }
+.headerProject {
+  background-color: whitesmoke;
+  position: fixed; }
+
+.wholeBody {
+  background-color: #1B1B1B; }
+  .wholeBody .backgroundStyle {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background: url("../img/Fauquier.ef65931c.jpg") no-repeat;
+    background-size: 100% auto;
+    -webkit-filter: blur(5px) grayscale(100%);
+    opacity: 0.2;
+    position: fixed; }
+  .wholeBody .talkAbout {
+    position: relative;
+    padding: 10% 10% 1.5% 10%; }
+    .wholeBody .talkAbout hr {
+      color: gray; }
+    .wholeBody .talkAbout h1 {
+      font-family: dosis;
+      font-size: 3em;
+      text-shadow: 0px 1px 0px black; }
+    .wholeBody .talkAbout p {
+      padding: 20px 0;
+      max-width: 500px;
+      color: gray;
+      font-family: monospace; }
+  .wholeBody .talkAboutGraphicDark h1, .wholeBody .talkAboutGraphicDark h4 {
+    text-shadow: 0px 1px 0px black;
+    color: white;
+    text-transform: uppercase; }
+  .wholeBody .talkAboutGraphicDark h4 {
+    font-size: 14px;
+    letter-spacing: 4px; }
+  .wholeBody .talkAboutGraphic h1, .wholeBody .talkAboutGraphic h4 {
+    text-shadow: 0px 1px 0px whitesmoke;
+    color: #464646;
+    text-transform: uppercase; }
+  .wholeBody .talkAboutGraphic h4 {
+    font-size: 14px;
+    letter-spacing: 4px; }
+  .wholeBody .talkAboutGraphic p {
+    color: black; }
+  .wholeBody .the-images {
+    text-align: center;
+    margin: 10% 0 15%; }
+    .wholeBody .the-images .protoImg, .wholeBody .the-images .graphicImg {
+      display: block;
+      margin-top: 10%;
+      position: relative;
+      background-color: #F9F9F9;
+      top: 0;
+      left: 0; }
+    .wholeBody .the-images .protoImg {
+      width: 80%; }
+    .wholeBody .the-images .graphicImg {
+      width: 100%;
+      padding: 10%; }
+    .wholeBody .the-images .prototypeImages {
+      width: 100%;
+      max-width: 1000px; }
+    .wholeBody .the-images h4 {
+      text-align: left;
+      font-size: 12px;
+      margin-top: 5px; }
+
+.movingFonts {
+  transition: letter-spacing 2s ease; }
+  .movingFonts:hover {
+    letter-spacing: 40px; }
+
+.graphicHeader {
+  background-image: none; }
+
+.skillsTitle {
+  text-align: center;
+  color: black;
+  margin: 5% 0;
+  font-size: 14px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  letter-spacing: 4px;
+  text-shadow: 0px 1px 0px whitesmoke; }
+
+.skillsIcons {
+  text-align: center; }
+  .skillsIcons img {
+    height: 120px; }
+
+.navBottom {
+  width: 80%;
+  -webkit-animation: slideUp 1s ease-in-out;
+  -moz-animation: slideUp 1s ease-in-out;
+  -ms-animation: slideUp 1s ease-in-out;
+  opacity: 1;
+  position: fixed;
+  background: rgba(253, 170, 0, 0.95);
+  z-index: 150;
+  bottom: 0px;
+  transform: translate(0, 100%);
+  transition: all 1s;
+  padding: 2% 10%; }
+  .navBottom h1 {
+    color: black;
+    font-size: 25px; }
+  .navBottom #meImg {
+    max-width: 100px; }
+  .navBottom .hover, .navBottom .contents {
+    font-family: Impact;
+    font-size: 35px;
+    color: black; }
+  .navBottom .hover {
+    display: inline-block;
+    width: auto; }
+  .navBottom .contents, .navBottom .contents .inner {
+    display: block; }
+  .navBottom .contents {
+    white-space: nowrap; }
+    .navBottom .contents .inner, .navBottom .contents .innerTwo {
+      width: 0%;
+      overflow: hidden;
+      -webkit-transition: width 1s ease-in-out;
+      -moz-transition: width 1s ease-in-out;
+      -ms-transition: width 1s ease-in-out;
+      -o-transition: width 1s ease-in-out;
+      transition: width 1s ease-in-out; }
+    .navBottom .contents .innerTwo {
+      -webkit-transition-delay: 0.5s;
+      -moz-transition-delay: 0.5s;
+      -ms-transition: width 1s ease-in-out;
+      -o-transition-delay: 0.5s;
+      transition-delay: 0.5s; }
+  .navBottom .hover:hover + .wrapper .inner {
+    width: 100%; }
+  .navBottom .hover:hover + .wrapper .innerTwo {
+    width: 100%; }
+
+.showNavBottom {
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0); }
+
+@media screen and (max-width: 1000px) {
+  .projectThumb .col-md-6 {
+    width: 95%;
+    vertical-align: left; }
+
+  .graphicImg img {
+    width: 80%; }
+
+  .wholeBody .talkAbout h1 {
+    font-size: 2em; }
+  .wholeBody .hover {
+    font-size: 25px; }
+  .wholeBody .contents {
+    font-size: 25px; } }
+@media screen and (max-width: 980px) {
+  #mainLogo {
+    font-size: 65px; } }
+@media screen and (max-width: 480px) {
+  .header nav {
+    font-size: 25px; }
+
+  .navBottom .hover, .navBottom .contents {
+    font-size: 4vw; }
+  .navBottom h1 {
+    font-size: 5vw; } }
